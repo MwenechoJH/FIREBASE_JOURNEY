@@ -4,6 +4,7 @@ It will be a way for me to keep track of my learning and also a means to display
 
 I will keep it as **N3ch0** as I can. I will include the meanings of terms if need be. With that being said, let's begin.
 
+
 ### Module Bundlers
 One of the first things that I got introduced to on this journey was the concept of module bundlers.<br>
 **Module Bundlers** are just ways of managing complex networks of Javascript Dependencies. What they essentially do is **make one JS file** containing all the dependencies that were used by the root file.
@@ -20,9 +21,11 @@ After a little research, I found out that these commands are basically the same.
 
 `-D` = `--save-dev` (it's just the shorthand method)
 
+
 ### `package.json` file
 
 >>I will include something explaining package.json
+
 `package.json` has `"scripts"`, which are custom shortcuts that a user creates for long and repetetive commands. they are added int the format `"command":"the order -of cammand"`<br>
 The shorthands ca be run by `npm run script_name`
 
