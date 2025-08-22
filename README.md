@@ -2,8 +2,24 @@
 This will be documentation about the things that I learn along my journey in firebase
 It will be a way for me to keep track of my learning and also a means to display my knowledge to whom it may concern.
 
+(Funny how I came back to this after like 3 months and completely forgot things, I am grateful I was documenting what I was learning 22-08-2025)
+
 I will keep it as **N3ch0** as I can. I will include the meanings of terms if need be. With that being said, let's begin.
 
+
+### Node.js Modules (CommonJS/ ES Modules)
+**>>check out how Node.js handles file imports**
+<code>
+// math.js
+module.exports = { add: (a, b) => a + b };  // CommonJS
+// or
+export const add = (a, b) => a + b;         // ES Modules
+
+// app.js
+const { add } = require('./math');          // CommonJS
+// or
+import { add } from './math.js';            // ES Modules
+</code>
 
 ### Module Bundlers
 One of the first things that I got introduced to on this journey was the concept of module bundlers.<br>
