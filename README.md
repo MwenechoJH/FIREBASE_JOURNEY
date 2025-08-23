@@ -35,7 +35,9 @@ ran the code `npm install webpack webpack-cli -D`<br>
 The next time I was doing this (Now on a linux), I ran into the cammand `npm install --save-dev webpack webpack-cli`<br>
 After a little research, I found out that these commands are basically the same. They allow me to install `webpack` and `webpack-cli` as dev dependencies (for development only). they are saved in the `devDependencies` in my `package.json`
 
-`-D` = `--save-dev` (it's just the shorthand method)
+`-D` = `--save-dev` (it's just the shorthand method) -> this concept has been solidified in me since I have also worked with Linux a little. 
+
+(I need to be practicing often, I have noticed that the knowledge is leaving me )
 
 
 ### `package.json` file
@@ -46,3 +48,61 @@ After a little research, I found out that these commands are basically the same.
 The shorthands ca be run by `npm run script_name`
 
 `package.json` has `"devDependencies"`
+
+## Firebase
+
+### Steps for Initializing firebase in a Web project
+<h1>1. Create Firebase Project</h1>
+first we create a project in the firebase console. Basically the online application
+
+Firebase gives you a firebaseConfig object:
+    This object contains: Api key, authDomain, projectId, storageBucket etc
+
+I recall that at some point I needed to add another element when creating a certain application. I will update when I encounter it again.
+
+<h1>2. Install Firebase SDK</h1>
+
+`npm install firebase` - this is the command for installling use npm
+
+Now for the code and initializing the application
+
+<code>
+// Import the function you need
+import { initializeApp } from "firebase/app";
+
+// Here there are many functions, like database or something like that.
+// The functions just give different access to how firebase works
+
+// import { getFirestore } from "firebase/firestore";
+// import { getAuth } from "firebase/auth";
+// const db = getFirestore(app);
+// const auth = getAuth(app);
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA...",
+  authDomain: "your-app.firebaseapp.com",
+  projectId: "your-app",
+  storageBucket: "your-app.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "1:123456789:web:abc123"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+</code>
+
+
+## Firebase Hosting
+It a fast, secure CDN (Content Delivery Network) for serving web apps.
+That is static files (HTML, CSS, JS, images etc)
+
+It provides free SSL (Secure Sockets Layer) certificate
+
+Easy to deploy using Firebase CLI
+
+`npm install -g firebase-tools`<br>
+`firebase --version` Obviously just shows the version you have. Can also serve as a way of confirming the installation.<br>
+`firebase login`
+
+
