@@ -118,8 +118,24 @@ When you deploy but want to undo. You can just go on the firebase console and cl
 `firebase hosting:channel:deploy` - used for a preview of the site before final hosting. This can be used for testing
 
 
-YOU CAN ALSO LINK TO A FIREBASE WEB APPLICATION
+**YOU CAN ALSO LINK TO A FIREBASE WEB APPLICATION**
 (Do Research on That!)
+
+
+
+
+#  EXAMPLE WORKFLOW I DID
+Created a git repo<br>
+cloned the git repo<br>
+installed firbase tools `npm install -g firebase-tools` <br>
+ran `npm init` though it was unncessary<br>
+created a **public** folder <br>
+added html, css and js to the public directory<br>
+initialized firebase `firebase init` <br>
+tested the page `firebase serve` or  `firebase emulators:start` <br>
+DEPLOYED THE PAGE  `firebase deploy`
+
+
 
 
 
