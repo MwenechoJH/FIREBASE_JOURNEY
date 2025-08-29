@@ -105,4 +105,22 @@ Easy to deploy using Firebase CLI
 `firebase --version` Obviously just shows the version you have. Can also serve as a way of confirming the installation.<br>
 `firebase login`
 
+logging out is as simple as `firebase logout` or `firebase logout --all`
+
+`firebase init` - is used to connect a local directory to a firebase project. Static assets are kept in the local project directory.
+
+`firebase deploy` - this is when you finally want to deploy the website.
+
+When you deploy but want to undo. You can just go on the firebase console and click a button. Which buttong ? I don't know. But we will probably find out soon enough.
+
+`firebase emulators:start` - used for simulation on local url or something like that
+
+`firebase hosting:channel:deploy` - used for a preview of the site before final hosting. This can be used for testing
+
+
+YOU CAN ALSO LINK TO A FIREBASE WEB APPLICATION
+(Do Research on That!)
+
+
+
 
